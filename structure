@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<string.h>
+struct car
+{
+    char model[50];
+    char brand[50];
+    int manufacture_year;
+}c1,c2;
+int main()
+{
+    strcpy(c1.model,"Tiago");
+    strcpy(c1.brand,"tata");
+    c1.manufacture_year=2000;
+    printf("model:%s\n",c1.model);
+    printf("brand:%s\n",c1.brand);
+    printf("manufacture year:%d",c1.manufacture_year);
+}
