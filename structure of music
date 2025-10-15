@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<string.h>
+struct music
+{
+    char album_name[50];
+    char singer[50];
+    float duration;
+}a1,a2,a3;
+int main()
+{
+    strcpy(a1.album_name,"melody hits");
+    strcpy(a1.singer,"unnikrishnan");
+    a1.duration=4.50;
+    strcpy(a2.album_name,"90s hits");
+    strcpy(a2.singer,"A.R.Rahman");
+    a2.duration=4.00;
+    strcpy(a3.album_name,"yuvan hits");
+    strcpy(a3.singer,"yuvan");
+    a3.duration=4.75;
+    printf("album_name:%s\n",a1.album_name);
+    printf("singer:%s\n",a1.singer);
+    printf("duration:%.2f\n",a1.duration);
+    printf("album_name:%s\n",a2.album_name);
+    printf("singer:%s\n",a2.singer);
+    printf("duration:%.2f\n",a2.duration);
+    printf("album_name:%s\n",a3.album_name);
+    printf("singer:%s\n",a3.singer);
+    printf("duration:%.2f\n",a3.duration);
+    return 0;
+}
