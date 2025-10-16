@@ -1,0 +1,31 @@
+#include<stdio.h>
+int main(){
+    char str[50]="hello world 123";
+    int i=0,vowels=0,consonants=0,digits=0,spaces=0;
+    while(str[i]!='\0')
+    {
+        char ch=str[i];
+        if(ch=='A'||ch=='E'||ch=='I'||ch=='O'||ch=='U'||ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+        {
+            vowels++;
+        }
+        else if((ch>='A'&&ch<='Z')||(ch>='a'&&ch<='z'))
+        {
+          consonants++; 
+        }
+        else if(ch>='0'&&ch<='9')
+        {
+            digits++;
+        }
+        else if(ch==' ')
+        {
+            spaces++;
+        }
+        i++;
+    }
+    printf("vowels:%d\n",vowels);
+    printf("consonants:%d\n",consonants);
+    printf("digits:%d\n",digits);
+    printf("spaces:%d\n",spaces);
+    return 0;
+}
